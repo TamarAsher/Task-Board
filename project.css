@@ -1,0 +1,105 @@
+body{
+    background-image: url(photos/tile.jpg);
+}
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+  }
+  .header h1{
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 38px;
+    
+  }
+#form{
+  background-image:url(photos/formbg.jpg);
+  display: flex;
+  justify-content: flex-start;
+  background-repeat: repeat-y;
+  font-size: 20px;
+  margin: auto;
+  width: 50%;
+  padding-top:14.3px;
+  padding-left: 10px;
+  font-family: 'Staatliches', cursive;
+  flex-direction: column;
+}
+input{
+  background: transparent;
+  border: 0px solid transparent;
+  display: inline-block;
+  margin-top: 2px;
+  width:523px;
+  margin-left: 26px !important;
+}
+input:focus {
+  outline: none;
+}
+.buttons-container button{
+  margin-right: 15px;
+  margin-left: 3px;
+  font-size: 15px;
+  height: 28px;
+  margin-bottom: 5px;
+}
+.notes-container {
+  display: flex;
+  font-family: 'Staatliches', cursive;
+  background-image:url(photos/notebg.png);
+  background-repeat: no-repeat;
+  width:180px;
+  height: 260px;
+  justify-content: flex-start;
+  margin: 40px;
+  flex-direction:column;
+  animation: fadein 1s;
+}
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.remove{
+  background-color: transparent;
+  border: none;
+  margin-top: 20px;
+  height: 10px;
+}
+.notes-container:hover #delete{
+  background-color: transparent;
+  border: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+#delete{
+  display: none;
+}
+.remove:focus{
+  outline: none;
+}
+#paragraph{
+  width: 160px;
+  height: 130px;
+  overflow-y: auto;
+  margin-left:10px ;
+  margin-top: 15px;
+  word-break: break-all;
+  font-size: 18px;
+  
+}
+#dateinput{
+  margin-left: 10px;
+}
+#timeinput{
+  margin-left: 10px;
+}
+#notes{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}

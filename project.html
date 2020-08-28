@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <h1>My Task Board</h1>
+ </div>
+ <div id="form" >
+    
+    <div class="input">
+        <label for="task">Task:</label>
+        <input id="task" type="text">
+    </div>
+    <div class="input">
+        <label for="date">Date:</label>
+        <input id="date" type="date">
+    </div>
+    <div class="input">
+        <label for="time">Time:</label>
+        <input id="time" type="time">
+    </div>
+       <div class="buttons-container">
+           <button class="btn btn-dark" onclick="save()" id="save">Save</button>
+           <button class="btn btn-dark" onclick="reset()" id="reset">Reset</button>
+       </div>
+    
+</div>
+<template>
+    <div class="notes-container">
+            <button class="remove" >
+                    <span id="delete" class="glyphicon glyphicon-remove"  aria-hidden="true" ></span>
+            </button>
+            <p id="paragraph"></p>
+        <div id="dateinput"></div>
+        <div id="timeinput"></div>
+    </div>
+    </template>
+<div id="notes"></div>
+
+<script src="project.js"></script>
+</body>
+</html>
